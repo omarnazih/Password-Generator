@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    line-height: 1.5;
+}
+
+:root{
+    --bg-color: #f4effc;
+    --headline-color: #1f1135;
+    --text-color: #1b1325;
+}
+body{
+    /* Font */
+    font-size: 	1.3125rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    /* end font */
+    /* Colors */
+    background-color: var(--bg-color);
+    color:var(--text-color);    
+    /* End colors */
+    
+}
+/* Header */
+header{
+    padding: 2.8rem;    
+}
+.title_head{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    color: var(--headline-color);
+}
+/* Globla Classes */
+.center{
+    text-align: center;
+}
+

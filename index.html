@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Frameworks -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.min.css" integrity="sha512-xiunq9hpKsIcz42zt0o2vCo34xV0j6Ny8hgEylN3XBglZDtTZ2nwnqF/Z/TTCc18sGdvCjbFInNd++6q3J0N6g==" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+    <!-- End Frameworks -->
+    <!-- Css Goes Here -->
+    <link rel="stylesheet" href="Style/style.css">
+    <!-- End Css -->    
+    <title>Password Generator</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="title_head center">Password Generator</h2>                
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In ducimus error distinctio porro alias quaerat tempora, quam consequuntur dicta incidunt nobis eveniet facilis minima voluptas, vero optio, mollitia quis est.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore, eius aperiam? Ut eligendi recusandae iste inventore id deserunt debitis eos autem blanditiis. Alias dolor ex, omnis quo ut ratione maiores.</p>            
+        </header>        
+
+        <form>
+            <fieldset>
+
+              <label for="passwordRangeField">Password Length</label>
+              <select id="passwordRangeField">
+                <optgroup label="Weak">
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </optgroup>
+                <optgroup label="Strong">
+                    <option value="11" selected>11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                </optgroup>
+              </select>
+
+              <label for="includeSymoblsField">Include Symbols</label>
+              <label for="includeSymbolsField"><input type="checkbox" id="includeSymbolsField" checked>( e.g. @#$% )</label>
+
+              <label for="includeNumbersField">Include Numbers</label>
+              <label for="includeNumbersField"><input type="checkbox" id="includeNumbersField" checked>( e.g. 123456 )</label>
+
+              <label for="includeLowercaseField">Include Lowercase Characters</label>
+              <label for="includeLowercaseField"><input type="checkbox" id="includeLowercaseField" checked>( e.g. abcdefgh )</label>
+              
+              <input class="button-primary" type="submit" value="Generate">
+
+              <label for="newPassword">Your New Password:</label>
+              <input type="text" id="newPasswordField">
+              <input class="button-primary" type="submit" value="Copy">
+                            
+            </fieldset>
+        </form>
+
+        <footer>
+            <h3>Created by <a href="https://github.com/omarnazih" target="_blank" rel="noopener noreferrer">omar nazih</a></h3>
+        </footer>
+    </div>
+</body>
+</html>
